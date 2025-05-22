@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .header-btn{
+        @apply text-white p-3 rounded-lg bg-blue-500 font-bold hover:bg-blue-700 transition-colors;
+    }
+
+    .menu-btn{
+        @apply text-white font-semibold hover:text-gray-400 transition-colors;
+    }
+
+    .flexbox-center{
+        @apply flex items-center justify-center;
+    }
+
+    .apply-now-gradient{
+        @apply bg-gradient-to-br from-[#24579F] via-[#24579F] to-[#1FA4CC] font-roboto text-white font-bold p-6 text-4xl rounded-tl-lg rounded-tr-lg;
+    }
+
+    .apply-now-btn{
+        @apply bg-[linear-gradient(146deg,_#1EA1CB_0%,_#265D9B_100%)] font-roboto px-5 py-5 rounded-lg capitalize text-xl font-bold w-fit text-white hover:bg-[linear-gradient(146deg,_#265D9B_0%,_#1EA1CB_100%)] transition-colors;
+    }
+
+    .social-media{
+        @apply w-10 h-10 flex items-center justify-center rounded-full text-blue-700 bg-blue-100 hover:bg-blue-700 transition-colors hover:text-white;
+    }
+    
+}
